@@ -37,7 +37,7 @@ void rockPaperScissors(){
         {
             cout << "Insert your choice: ";
             cin >> userInput;
-            if (inputChecker.find(userInput) != inputChecker.end())
+            if (inputChecker.contains(userInput))
             {
                 inputChecker[userInput]();
                 break;
@@ -91,7 +91,7 @@ void newGame(){
             cout << ">> ";
             cin >> userInput;
 
-            if (inputChecker.find(userInput) != inputChecker.end())
+            if (inputChecker.contains(userInput))
             {
                 cout << "You chose: " << moveToString(userInput) << endl;
                 cout << "Bot chose: " << moveToString(botChoice) << endl;
