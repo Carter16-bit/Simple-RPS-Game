@@ -88,8 +88,6 @@ void newGame(){
 
             int botChoice = computerDecision();
 
-            cout << botChoice << endl;
-
             cout << ">> ";
             cin >> userInput;
 
